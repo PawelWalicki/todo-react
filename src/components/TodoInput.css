@@ -1,0 +1,50 @@
+.boxTodo {
+    padding-top:10vh;
+    margin: auto;
+    width: 49vw;
+}
+
+.boxInput {
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: end;
+}
+
+.header {
+    font-size:x-large;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+}
+
+.input {
+    border-radius: 3px;
+    color: white;
+    border: none;
+    background-color: hsl(274, 15%, 22%);
+    height: 4vh;
+    width: 100%;
+}
+
+.button {
+    border-radius: 3px;
+    color: white;
+    border: none;
+    background-color: hsl(274, 15%, 22%);
+    cursor: pointer;
+}
+
+.light {
+    color: grey;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: hsl(274, 15%, 30%);
+}
+
+.button:active {
+    background-color: hsl(274, 15%, 40%);
+}
