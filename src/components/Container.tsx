@@ -3,6 +3,7 @@ import { TodoList } from "./TodoList"
 import { useState, useEffect } from "react"
 import { TodoItemType } from "../utils/types"
 import './Container.css'
+import { Footer } from "./Footer"
 
 type ViewStateType = "all" | "active" | "completed"
 
@@ -28,9 +29,6 @@ export function Container() {
          setTodos(prev => prev.filter(t => !t.isDone))
     }
 
-// let tab = [{xy}, {xx}, {xy}] 
-// tab.filter(e => e.has(y)).length
-
     return (
         <main className={`container ${isDarkMode ? "" : 'bright'}`}>
             <section className="header">
@@ -47,6 +45,7 @@ export function Container() {
                 <button className="buttons" onClick={() => setViewState("completed")}>Completed</button>
                 <button className="buttons" onClick={() => handleClearCompleted()}>Clear Completed</button>
             </section>
+            <Footer></Footer>
 
         </main>
     )
